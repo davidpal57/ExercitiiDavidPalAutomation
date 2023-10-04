@@ -60,5 +60,48 @@ public class Operators {
         int o = 57;
         int s = u + o;
 
+<<<<<<< HEAD
+=======
+        System.out.println(s);
+        System.out.println("-Exercitii optionale-");
+        System.out.println("Exercitiul 1:");
+        int var1, var2, var3, var4;
+
+        var1=5;
+        var2=7;
+        var3=2;
+        var4=9;
+
+        int suma = var1+var2+var3+var4;
+        int produs = var1*var2*var3*var4;
+
+        System.out.println(var1+var2+var3+var4);
+        System.out.println(var1*var2*var3*var4);
+        System.out.println(var4/var2);
+
+        System.out.println("Exercitiul 2:");
+        for(int i = 0; i < 3; i++)
+            var1++;
+        System.out.println(var1);
+
+        System.out.println("Exercitiul 3:");
+        for(int i = 0; i < 2; i++)
+            var2--;
+        System.out.println(var2);
+
+        System.out.println("Exercitiul 4:");
+        boolean cond1 = suma>100;
+        boolean cond2 = produs>1000;
+        System.out.println(cond1);
+        System.out.println(cond2);
+
+        System.out.println("Exercitiul 5:");
+        if(cond1)
+            System.out.println("Conditia este adevarata.");
+        else System.out.println("Conditia este falsa.");
+        if(cond2)
+            System.out.println("Conditia este adevarata.");
+        else System.out.println("Conditia este falsa.");
+>>>>>>> ff79622 (Incarcare exercitii automation.)
     }
 }
