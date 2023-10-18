@@ -60,8 +60,7 @@ public class Operators {
         int o = 57;
         int s = u + o;
 
-<<<<<<< HEAD
-=======
+
         System.out.println(s);
         System.out.println("-Exercitii optionale-");
         System.out.println("Exercitiul 1:");
@@ -102,6 +101,5 @@ public class Operators {
         if(cond2)
             System.out.println("Conditia este adevarata.");
         else System.out.println("Conditia este falsa.");
->>>>>>> ff79622 (Incarcare exercitii automation.)
     }
 }
