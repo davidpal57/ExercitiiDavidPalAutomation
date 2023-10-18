@@ -112,11 +112,7 @@ public class Operators {
         System.out.println(cond2);
 
         System.out.println("Exercitiul 5:");
-        if(cond1)
-            System.out.println("Conditia este adevarata.");
-        else System.out.println("Conditia este falsa.");
-        if(cond2)
-            System.out.println("Conditia este adevarata.");
-        else System.out.println("Conditia este falsa.");
+        System.out.println(cond1||cond2);
+        System.out.println(cond1&&cond2);
     }
 }
