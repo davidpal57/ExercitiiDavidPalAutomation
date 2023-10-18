@@ -55,13 +55,30 @@ public class Operators {
             System.out.println("Numarul este par");
         else System.out.println("Numarul nu este par");
 
+        System.out.println("Exercitiul 1:");
+        System.out.println(10*6);
+        System.out.println("Exercitiul 2:");
+        System.out.println(10/5);
+        System.out.println("Exercitiul 3:");
+        int x = 10;
+        ++x;
+        System.out.println(x);
+        System.out.println("Exercitiul 4:");
+        int y = 10;
+        y += 5;
+        System.out.println(y);
         System.out.println("Exercitul 5:");
         int u = 29;
         int o = 57;
         int s = u + o;
 
+        if(s>=10)
+            System.out.println("suma este mai mare decat 10");
+        else System.out.println("suma este mai mica decat 10");
 
-        System.out.println(s);
+        System.out.println("Exercitiul 6:");
+        if(s%2==0)
+            System.out.println("suma este numar par");
         System.out.println("-Exercitii optionale-");
         System.out.println("Exercitiul 1:");
         int var1, var2, var3, var4;
