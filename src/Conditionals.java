@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Conditionals {
     public static void main(String[] args) {
         if( 5 > 0 ){
@@ -32,8 +34,8 @@ public class Conditionals {
             default: System.out.println("unknown");
         }
         System.out.print("\n");
-        System.out.println("Exercitii10/18");
-        System.out.println("\n");
+        System.out.println("Exercitii 10/18");
+        System.out.print("\n");
         System.out.println("Exercitiul 1:");
         for(int i = 0; i <= 10; i++) {
             System.out.println(i);
@@ -46,11 +48,30 @@ public class Conditionals {
         System.out.println("Exercitiul 3:");
         for(int i = 0; i <=100; i += 2)
             System.out.println(i);
-        System.out.println("\n");
+        System.out.print("\n");
         System.out.println("Exercitiul 4:");
-        String sir[] = {"mar", "capsune", "pere", "banane"};
-        for(String fructe: sir) {
-            System.out.println(fructe);
+        String numeFruct[] = {"mar", "capsune", "pere", "banane"};
+        for(String fructe: numeFruct) {
+            System.out.println("Imi place sa mananc " + fructe);
+        }
+
+        System.out.print("\n");
+        System.out.println("Exercitiul 5:");
+        int luna = 10;
+        switch(luna){
+            case 1: System.out.println("Ianuarie"); break;
+            case 2: System.out.println("Februarie"); break;
+            case 3: System.out.println("Martie"); break;
+            case 4: System.out.println("Aprilie"); break;
+            case 5: System.out.println("Mai"); break;
+            case 6: System.out.println("Iunie"); break;
+            case 7: System.out.println("Iulie"); break;
+            case 8: System.out.println("August"); break;
+            case 9: System.out.println("Septembrie"); break;
+            case 10: System.out.println("Octombrie"); break;
+            case 11: System.out.println("Noiembrie"); break;
+            case 12: System.out.println("Decembrie"); break;
+            default: System.out.println("Un an are doar 12 luni");
         }
     }
 }
