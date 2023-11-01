@@ -73,5 +73,68 @@ public class Conditionals {
             case 12: System.out.println("Decembrie"); break;
             default: System.out.println("Un an are doar 12 luni");
         }
+
+        System.out.println("\n");
+        System.out.println("Exercitii optionale - Testare automata");
+        System.out.println("Instructiuni conditionale");
+        System.out.println("\n");
+        System.out.println("Exercitiul 1");
+        int temperature = 20;
+        if(temperature < 18)
+            System.out.println("prea frig");
+        else if (temperature >= 18 && temperature <= 22)
+            System.out.println("ok");
+        else if (temperature > 22)
+            System.out.println("prea cald");
+
+        System.out.println("\n");
+        System.out.println("Exercitiul 2");
+        char gen1 = 'm';
+        char gen2 = 'f';
+        boolean married = false;
+        if(gen1 == 'm' && (married || married == false))
+            System.out.println("Domnul");
+        if (gen2 == 'f' && married)
+            System.out.println("Doamna");
+        else if (gen2 == 'f' && married == false)
+            System.out.println("Domnisoara");
+
+        System.out.println("\n");
+        System.out.println("Exercitiul 3");
+        int var1 = 28;
+        int var2 = 65;
+        if(var1 > var2)
+            System.out.println(var1 + " este mai mare decat" + var2);
+        else if (var2 > var1)
+            System.out.println(var2 + " este mai mare decat " + var1);
+        else if (var1 == var2)
+            System.out.println("sunt egale");
+
+        System.out.println("\n");
+        System.out.println("Exercitiul 4");
+        int var3 = 892;
+        if(var1 > var2) {
+            if(var1 > var3)
+                System.out.println(var1);
+            else System.out.println(var3);
+        }
+        else if (var2 > var1){
+            if(var2 > var3)
+                System.out.println(var2);
+            else System.out.println(var3);
+        }
+
+        System.out.println("\n");
+        System.out.println("Exercitiul 5");
+        char letter = 'o';
+        char vocale[] = {'a', 'e', 'i', 'o', 'u'};
+        int vocala = 0;
+        for(int i = 0; i <= 4; i++){
+            if(letter == vocale[i])
+                vocala++;
+        }
+        if (vocala > 0)
+            System.out.println("\""+letter+"\" este vocala");
+        else System.out.println("\""+letter+"\" este consoana");
     }
 }

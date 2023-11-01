@@ -28,6 +28,7 @@ public class MyArray {
         System.out.println(exercitiuArray[3]);
         System.out.println(exercitiuArray.length);
 
+        System.out.println("\n");
         char exDoiArray[] = {'a', 'b', 'c', 'd'};
         System.out.println(exDoiArray[0]);
         System.out.println(exDoiArray[1]);
