@@ -129,7 +129,7 @@ public class Conditionals {
         char letter = 'o';
         char vocale[] = {'a', 'e', 'i', 'o', 'u'};
         int vocala = 0;
-        for(int i = 0; i <= 4; i++){
+        for(int i = 0; i < vocale.length; i++){
             if(letter == vocale[i])
                 vocala++;
         }
