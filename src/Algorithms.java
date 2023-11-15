@@ -13,5 +13,23 @@ public class Algorithms {
         for(String t: tari){
             System.out.println(t.charAt(0) + " " + t.length() + " " + t.contains("n"));
         }
+
+        System.out.println();
+        for(String t:tari){
+            if (t.charAt(0) == 'A')
+                System.out.println(t);
+        }
+        String taranumelung = " ";
+        String taranumescurt = "";
+        for(String t:tari){
+            if(t.length() > taranumelung.length())
+                taranumelung = t;
+            if(taranumescurt.length() == 0)
+                taranumescurt = t;
+            else if (taranumescurt.length() > t.length())
+                taranumescurt = t;
+        }
+        System.out.println(taranumelung);
+        System.out.println(taranumescurt);
     }
 }
