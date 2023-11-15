@@ -11,6 +11,10 @@ public class JavaMethods {
         getSum(2.3,5.6);
         helloNameAge("David", 100);
         twoFriends("Asterix","Obelix");
+        System.out.println(getSumWithReturn(5,6));//trebuie or sa dam unei variabile valoarea cu functia "getSumWithReturn" si pe urma sa o afisam sau sa o afisam direct, cum am facut eu
+        System.out.println(getProductWithReturn(5,6));
+        System.out.println(areMere("Ana"));
+        System.out.println(areMere("David"));
     }
 
     private static void printHello(){
@@ -48,4 +52,17 @@ public class JavaMethods {
     private static void twoFriends(String name1, String name2){
         System.out.println(name1 + " and " + name2 + " are friends");
     }
+    private static int getSumWithReturn(int x, int y){
+        int sum = x+y;
+        return sum;
+    }
+
+    private static int getProductWithReturn(int x, int y){
+        int prod = x*y;
+        return prod;
+    }
+    private static String areMere(String nume){
+        return nume + " are mere";
+    }
+
 }
