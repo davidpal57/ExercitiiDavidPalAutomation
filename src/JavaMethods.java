@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 public class JavaMethods {
     public static void main(String[] args) {
         printHello();
@@ -15,6 +13,20 @@ public class JavaMethods {
         System.out.println(getProductWithReturn(5,6));
         System.out.println(areMere("Ana"));
         System.out.println(areMere("David"));
+        inversulNumarului(35);
+        numarulMaiMare(-4,0);
+        mediaAritmetica(1, 2, 3.3);
+        lungimeString("Propaganda");
+        concatenareStringuri("tu alegi", "ce alegi");
+        inversString("abcd");
+        System.out.println('\n');
+        ninge();
+        System.out.println(nrPar(84));
+        lunaAnotimp("decembrie");
+        System.out.println(nrMaiMare(11,21));
+        System.out.println(nrCelMaiMare(11,11,11,12));
+        System.out.println(literaMijloc("zapada"));
+        System.out.println(lungimeaString("perpendicular"));
     }
 
     private static void printHello(){
@@ -65,4 +77,109 @@ public class JavaMethods {
         return nume + " are mere";
     }
 
+    private static void inversulNumarului(int x){
+        System.out.println(x-2*x);
+    }
+
+    private static void numarulMaiMare(int x, int y){
+        if (x > y)
+            System.out.println(x);
+        else System.out.println(y);
+    }
+
+    private static void mediaAritmetica(double x, double y, double z){
+        double sum;
+        sum = (x + y + z) / 3;
+        System.out.println(sum);
+    }
+
+    private static void lungimeString (String input){
+        System.out.println(input.length());
+    }
+
+    private static void concatenareStringuri (String input1, String input2){
+        System.out.println(input1 + " " + input2);
+    }
+
+    private static void inversString (String input){
+        char litere[] = input.toCharArray();
+        for (int i = input.length() - 1; i >= 0; i--){
+            System.out.print(litere[i]);
+        }
+    }
+
+    private static void ninge(){
+        System.out.println("In sfarsit ninge!");
+    }
+
+    private static boolean nrPar(int x) {
+        if (x % 2 == 0)
+            return true;
+        else return false;
+    }
+
+    private static void lunaAnotimp (String luna){
+        String primvara[] = {"martie", "aprilie", "mai"};
+        String vara[] = {"iunie", "iulie", "august"};
+        String toamna[] = {"septembrie", "octombrie", "noiembrie"};
+        String iarna[] = {"decembrie", "ianuarie", "februarie"};
+        if (luna == primvara[0] || luna == primvara[1] || luna == primvara[2])
+            System.out.println("primavara");
+        else if (luna == vara[0] || luna == vara[1] || luna == vara[2])
+            System.out.println("vara");
+        else if (luna == toamna[0] || luna == toamna[1] || luna == toamna[2])
+            System.out.println("toamna");
+        else if (luna == iarna[0] || luna == iarna[1] || luna == iarna[2])
+            System.out.println("iarna");
+        else System.out.println("unknown");
+    }
+
+    private static int nrMaiMare (int x, int y){
+        if (x>y)
+            return x;
+        else if (y>x)
+            return y;
+        else
+            return x;
+    }
+
+    private static int nrCelMaiMare (int a, int b, int c, int d){
+        if (a > b || a > c || a > d)
+            return a;
+        else if (b > a || b > c || b > d)
+            return b;
+        else if (c > a || c > b || c > d)
+            return c;
+        else
+            return d;
+    }
+
+    private static char[] literaMijloc (String cuvant){
+        char litere[] = cuvant.toCharArray();
+        if(cuvant.length()%2==1)
+            return new char[]{litere[cuvant.length() / 2]};
+        else
+            return new char[]{litere[cuvant.length()/2 - 1], litere[cuvant.length()/2]};
+    }
+
+    private static int lungimeaString (String cuvant){
+        return cuvant.length();
+    }
+
+    private static int sumaCifrelor (int numar){
+        int nrcifre;
+        int nr = 1;
+        for (int i = 10; i >= numar; i*=10)
+            if(numar / i != 0) {
+                nrcifre = numar;
+                nr++;
+            }
+
+
+        for (int i = 2; i ; i++) {
+            for (int i = 10; i; i *= 10) {
+                if (numar / i != 0)
+            }
+        }
+    }
 }
