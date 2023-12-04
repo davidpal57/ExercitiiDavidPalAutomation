@@ -18,7 +18,7 @@ public class JavaMethods {
         mediaAritmetica(1, 2, 3.3);
         lungimeString("Propaganda");
         concatenareStringuri("tu alegi", "ce alegi");
-        inversString("abcd");
+        inversString("abcdefg");
         System.out.println('\n');
         ninge();
         System.out.println(nrPar(84));
@@ -27,6 +27,8 @@ public class JavaMethods {
         System.out.println(nrCelMaiMare(11,11,11,12));
         System.out.println(literaMijloc("zapada"));
         System.out.println(lungimeaString("perpendicular"));
+        System.out.println(sumaCifrelor(354));
+        System.out.println(metodaEx8Optionale(873));
     }
 
     private static void printHello(){
@@ -166,20 +168,32 @@ public class JavaMethods {
         return cuvant.length();
     }
 
-    private static int sumaCifrelor (int numar){
-        int nrcifre;
-        int nr = 1;
-        for (int i = 10; i >= numar; i*=10)
-            if(numar / i != 0) {
-                nrcifre = numar;
-                nr++;
-            }
-
-
-        for (int i = 2; i ; i++) {
-            for (int i = 10; i; i *= 10) {
-                if (numar / i != 0)
-            }
+    private static double sumaCifrelor (double numar){
+        double nrcifre;
+        double nr = 0;
+        nrcifre = numar;
+        while (nrcifre>10) {
+            nrcifre /= 10;
+            nr++;
         }
-    }
+        double b = (int) (numar / Math.pow(10, nr));
+        double a;
+        while (nr>0){
+            a = (int) (numar - (numar / Math.pow(10,nr)) * Math.pow(10,nr));
+            nr--;
+            if(nr >= 1)
+            b += a/Math.pow(10,nr);
+            else b += a;
+        }
+        return b;
+    } // EPIC FAIL
+
+    public static int metodaEx8Optionale (int numar){
+        int sum = 0;
+        while (numar > 0) {
+            sum = sum + numar % 10;
+            numar = numar / 10;
+        }
+        return sum;
+    } // :/
 }
