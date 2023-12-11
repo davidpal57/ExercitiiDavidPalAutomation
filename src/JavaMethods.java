@@ -186,7 +186,7 @@ public class JavaMethods {
             else b += a;
         }
         return b;
-    } // EPIC FAIL..
+    } // EPIC FAIL.
 
     public static int metodaEx8Optionale (int numar){
         int sum = 0;
